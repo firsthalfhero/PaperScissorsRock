@@ -27,7 +27,7 @@ while play:
     elif rand >= 60:
         pick = 2
 
-    print(rand,"|",pick,"|",array[pick],"|")
+print(rand,"|",pick,"|",array[pick],"|")
     
     # time.sleep(1)
 

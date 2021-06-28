@@ -24,7 +24,6 @@ class scissorsPaperRock():
             
     def paper(opponents_action):
         global result
-        # print("In paper:",opponents_action)
         if opponents_action == 'paper':
             result = 'draw'
         elif opponents_action == 'rock':
@@ -37,7 +36,6 @@ class scissorsPaperRock():
     
     def rock(opponents_action):
         global result
-        
         if opponents_action == 'paper':
             result = 'lose'
         elif opponents_action == 'rock':
@@ -52,11 +50,11 @@ class scissorsPaperRock():
         global opponents_action
         opponents_action = ['rock','paper','scissors']
         rand = random.randrange(0, 90, 1)
-        if rand < 30:
+        if rand <= 30:
             pick = 0
-        elif 30 <= rand < 60:
+        elif 30 < rand <= 60:
             pick = 1
-        elif rand >= 60:
+        elif rand > 60:
             pick = 2
         return opponents_action[pick]
     
@@ -80,10 +78,10 @@ class scissorsPaperRock():
         #announce result
         
         if result == 'win':
-            print("Congratulations you've won. The computer played", opponents_action,"and you played", players_action)
+            print("Congratulations you've won. The computer played", opponents_action,"and you played", players_action,"\n")
         elif result == 'lose':
-            print("Sorry you've lost. The computer played", opponents_action,"and you played", players_action)
+            print("Sorry you've lost. The computer played", opponents_action,"and you played", players_action,"\n")
         elif result == 'draw':
-            print("Play again, its a draw. The computer played", opponents_action,"and you played", players_action)
+            print("Play again, its a draw. The computer played", opponents_action,"and you played", players_action,"\n")
         else:
-            print("Oops, something went wrong")
+            print("Oops, something went wrong\n")

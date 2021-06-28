@@ -3,3 +3,4 @@ scissorsPaperRock.code-workspace
 .vscode/settings.json
 __pycache__/RockPaperScissors.cpython-38.pyc
 __pycache__/*
+RockPaperScissors.pyc
