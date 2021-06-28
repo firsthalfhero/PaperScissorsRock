@@ -50,9 +50,14 @@ class scissorsPaperRock():
 
     def opponents_move():
         global opponents_action
-        pick = random.randrange(0,2,1)
         opponents_action = ['rock','paper','scissors']
-        # print("Opponents action:", opponents_action[pick])
+        rand = random.randrange(0, 90, 1)
+        if rand < 30:
+            pick = 0
+        elif 30 <= rand < 60:
+            pick = 1
+        elif rand >= 60:
+            pick = 2
         return opponents_action[pick]
     
 
