@@ -82,14 +82,3 @@ class scissorsPaperRock():
             print("Play again, its a draw. The computer played", opponents_action,"and you played", players_action)
         else:
             print("Oops, something went wrong")
-    
-    
-        
-        
-    
-   
-
-
-
-# opponents_action = scissorsPaperRock.opponents_move()
-# print(opponents_action)
